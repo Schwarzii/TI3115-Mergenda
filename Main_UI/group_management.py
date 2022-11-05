@@ -92,7 +92,8 @@ def group_joined(req):
     fire_close_sub_window('join_group')
 
     # Add new group module
-    add_groups(new_group_info.items(), document['groups'])
+    user = new_group_info.pop('user')
+    add_groups(new_group_info.items(), document['groups'], user)
 
 
 def edit_group_name(ev):
