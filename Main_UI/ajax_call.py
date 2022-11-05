@@ -14,14 +14,14 @@ def alert_resp(req):
 
 # Send data to the server using POST method
 def post_data(send_data, route='update', callback=alert_resp):
-    ajax.post(f"http://{server_host}/{route}",
+    ajax.post(f"https://{server_host}/{route}",
               data=send_data,
               oncomplete=callback)
 
 
 # Send data to the server using GET method
 def get_data(send_data, route, callback=alert_resp, mode='json'):
-    ajax.get(f"http://{server_host}/{route}",
+    ajax.get(f"https://{server_host}/{route}",
              data=send_data,
              mode=mode,
              cache=True,

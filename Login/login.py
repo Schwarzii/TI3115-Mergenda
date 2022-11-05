@@ -48,7 +48,7 @@ def redirection():
 
 def login(ev):
     if not check_none_input():  # No empty input fields of username and password
-        ajax.get(f"http://{server_host}/login",
+        ajax.get(f"https://{server_host}/login",
                  data={'user': document['username'].value, 'pass': document['password'].value},
                  cache=True,
                  oncomplete=resp_redirect)
@@ -106,7 +106,7 @@ def signup(ev):
             prompt("Please enter your password again")
         else:
             if document['password'].value == document['password_double'].value:
-                ajax.get(f"http://{server_host}/signup",
+                ajax.get(f"https://{server_host}/signup",
                          data={'user': document['username'].value, 'pass': document['password'].value},
                          cache=True,
                          oncomplete=signup_success)
