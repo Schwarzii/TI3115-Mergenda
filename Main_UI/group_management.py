@@ -38,7 +38,6 @@ def add_right_grid(user):
 
     @bind('#join_group', 'click')
     def join_group_window(event):
-        # TODO: join group
         sub_window = draw_sub_window('join_group')
         sub_window <= (DIV('Invitation code', Class='td in_line') + INPUT(id='join_group_code', Class='in_line'))
         sub_window <= DIV('Join this group!', id='join_button', Class='td button_blue')
