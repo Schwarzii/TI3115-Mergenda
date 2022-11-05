@@ -24,8 +24,8 @@ else:  # Must log in account first
     redirect_to_login()
     user = 'sheep'
     password = '2222'
-    # server_host = 'Schwarzi.pythonanywhere.com'
-    server_host = '127.0.0.1:5000'
+    server_host = 'Schwarzi.pythonanywhere.com'
+    # server_host = '127.0.0.1:5000'
 
 # Components showing the user's group related info
 left_grid = DIV(Class='container_grid')

@@ -18,8 +18,8 @@ container <= TR(TD('Sign up', colspan=2, Class='button', id='signup'))
 # Show in the window
 document <= container
 
-# server_host = 'Schwarzi.pythonanywhere.com'
-server_host = '127.0.0.1:5000'
+server_host = 'schwarzi.pythonanywhere.com'
+# server_host = '127.0.0.1:5000'
 
 
 def prompt(message):
